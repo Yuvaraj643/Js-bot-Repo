@@ -1,0 +1,79 @@
+{
+    "topics": [
+      {
+        "name": "Topic 1",
+        "subtopics": [
+          {
+            "name": "Subtopic 1.1",
+            "video_src": "https://www.example.com/video1.mp4",
+            "main_key_points": [
+              "Key Point 1",
+              "Key Point 2",
+              "Key Point 3"
+            ],
+            "mcq": {
+              "question": "What is the capital of France?",
+              "options": ["New York", "Paris", "London", "Berlin"],
+              "answer": "Paris"
+            },
+            "js_challenge": {
+              "question": "Write a function to add two numbers in JavaScript.",
+              "answer": "function addNumbers(a, b) {\n  return a + b;\n}",
+              "predefined_input": {
+                "a": 5,
+                "b": 3
+              }
+            }
+          },
+          {
+            "name": "Subtopic 1.2",
+            "video_src": "https://www.example.com/video2.mp4",
+            "main_key_points": [
+              "Key Point A",
+              "Key Point B",
+              "Key Point C"
+            ],
+            "mcq": {
+              "question": "Which planet is known as the Red Planet?",
+              "options": ["Mars", "Earth", "Jupiter", "Venus"],
+              "answer": "Mars"
+            },
+            "js_challenge": {
+              "question": "Write a JavaScript function to find the square of a number.",
+              "answer": "function square(number) {\n  return number * number;\n}",
+              "predefined_input": {
+                "number": 7
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Topic 2",
+        "subtopics": [
+          {
+            "name": "Subtopic 2.1",
+            "video_src": "https://www.example.com/video3.mp4",
+            "main_key_points": [
+              "Key Point X",
+              "Key Point Y",
+              "Key Point Z"
+            ],
+            "mcq": {
+              "question": "Which gas do plants absorb from the atmosphere?",
+              "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+              "answer": "Carbon Dioxide"
+            },
+            "js_challenge": {
+              "question": "Write a JavaScript function to calculate the factorial of a number.",
+              "answer": "function factorial(number) {\n  if (number <= 1) return 1;\n  return number * factorial(number - 1);\n}",
+              "predefined_input": {
+                "number": 4
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

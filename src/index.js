@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { render } from "react-dom";
+import styled from "styled-components";
+import ChatBot from "react-simple-chatbot";
+import { script } from "./chatbot";
+import { stepifyScript } from "./utils";
+import "./App.css"
+const Main = styled.div`
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const App = () => (
+  <Main>
+    <ChatBot
+      bubbleOptionStyle={{ backgroundColor: "white", color: "black" }}
+      steps={stepifyScript(script)}
+    />
+  </Main>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+render(<App />, document.getElementById("root"));
